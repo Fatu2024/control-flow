@@ -54,15 +54,38 @@
 //answer = 102,400 plants
 
 //space required:
-let plants = 102400
-const spacerequired = .8 * plants
-console.log(spacerequired)
-//space required = 81,920 sq. meters
+// let plants = 102400
+// const spacerequired = .8 * plants
+// console.log(spacerequired)
+// //space required = 81,920 sq. meters
 
-
-//2b. If the space remained circular, what would be the radius of this expanded garden?
-const PI = 3.1415;
-// const area = PI * radius * radius;
-console.log(Math.sqrt(81920/PI))
+// //2b. If the space remained circular, what would be the radius of this expanded garden?
+// const PI = 3.1415;
+// console.log(Math.sqrt(81920/PI))
 //new radius ~ 161.48 sq meters.
 
+// The scientists decided not to listen to your recommendations, and have instead started with 100 plants in the original 5-meter-radius garden.
+// Use try and catch to wrap your work in an error-handling block. 
+// If the amount of space required to hold the originally provided number of plants exceeds the amount of space available, 
+// throw a new error and log an appropriate message.
+
+const PI = 3.1415;
+const radius = 5;
+const area = PI * radius * radius
+let plant = 100
+console.log(area)
+
+let = (space = plant * .8);
+   console.log(space)
+try {
+   if (space <= area){
+      console.log('we have space');
+   } else {
+      throw "error - too many plants!";
+   }
+} catch (error) {
+   console.log(error)
+}
+
+//total area = 78.5375
+//area used by 100 plants = 80m, error too many plants!
